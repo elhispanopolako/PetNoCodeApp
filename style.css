@@ -1,0 +1,132 @@
+    /* General Styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    h1, h2 {
+        text-align: center;
+        color: #444;
+    }
+    .sessionTab{
+        display: flex;
+        justify-content: space-between;
+    }
+ 
+    /* Container */
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Form Styles */
+    form {
+        margin-bottom: 30px;
+        padding: 20px;
+        background: #f7f7f7;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+    }
+    form.action{
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    form label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #555;
+    }
+
+    form input[type="text"], 
+    form textarea, 
+    form select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    form button {
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+        background-color: #45a049;
+    }
+
+    /* Animal List */
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    ul li {
+        background: #fff;
+        border: 1px solid #ddd;
+        margin-bottom: 15px;
+        padding: 15px;
+        border-radius: 8px;
+        display: flex;
+        gap: 5px;
+    }
+    .petDetails{
+        width: 90%;
+    }
+    .petActions{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    ul li h3 {
+        margin-top: 0;
+    }
+
+    ul li span {
+        font-size: 14px;
+        color: #666;
+    }
+
+    /* Links */
+    a {
+        color: #3498db;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+
+    a:hover {
+        color: #2980b9;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+        .container {
+            padding: 15px;
+        }
+
+        form button {
+            width: 100%;
+        }
+    }
